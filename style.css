@@ -3,18 +3,35 @@
 body {
     font-family: sans-serif;
 }
-div .main-container {
-    display: block;
+
+a {  
+    color: #232323;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-div .top-nav {
-    background-color: #ffa500;
+nav {
+    display: flex;
+    background-color: orange;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-div .top-nav-left {
-    border: 1px solid royalblue;
+ul {
+    border: 2px solid red;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-div .top-nav-right {
-    border: 1px solid red;
+ul.left-nav {
+    border: 2px solid blue;
+    justify-content: flex-start;
+    margin-right: auto;
 }
