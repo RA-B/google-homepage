@@ -2,6 +2,7 @@
 
 body {
     font-family: sans-serif;
+    flex-flow: column;
 }
 
 a {  
@@ -16,7 +17,7 @@ nav {
     flex-flow: row;
     justify-content: space-around;
     padding: 0;
-    margin: 0;
+    margin-bottom: auto;
     list-style: none;
 }
 
@@ -34,4 +35,38 @@ ul.left-nav {
     border: 2px solid blue;
     justify-content: flex-start;
     margin-right: auto;
+}
+
+ul.right-nav {
+    border: 2px solid green;
+    justify-content: flex-end;
+}
+
+section {
+    flex-flow: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: orange;
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: auto;
+    bottom: 0px;
+    width: 100%;
+    list-style: none;
+}
+
+ul.left-footer {
+    border: 2px solid blue;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+ul.right-footer {
+    border: 2px solid green;
+    justify-content: flex-end;
 }
