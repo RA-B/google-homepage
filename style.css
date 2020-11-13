@@ -1,8 +1,11 @@
 @import "reset.css";
 
 body {
+    background: lightblue;
     font-family: sans-serif;
     flex-flow: column;
+    
+    font-size: 12px;
 }
 
 a {  
@@ -15,9 +18,8 @@ nav {
     display: flex;
     background-color: orange;
     flex-flow: row;
-    justify-content: space-around;
-    padding: 0;
-    margin-bottom: auto;
+    justify-content: flex-start;
+    padding: 2em;
     list-style: none;
 }
 
@@ -42,21 +44,32 @@ ul.right-nav {
     justify-content: flex-end;
 }
 
-section {
+main {
+    background-color: lightpink;
+    display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
+    height: 77.5vh;
+    overflow: auto;
+}
+
+main > form {
+
+}
+
+form > div {
+    border: 1px solid gray;
+    padding: 10px;
+    
 }
 
 footer {
     background-color: orange;
     display: flex;
     flex-flow: row;
-    position: absolute;
-    justify-content: space-around;
-    padding: 0;
-    margin-top: auto;
-    bottom: 0px;
-    width: 100%;
+    justify-content: flex-end;
+    padding: 2em;
     list-style: none;
 }
 
