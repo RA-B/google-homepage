@@ -1,11 +1,14 @@
 @import "reset.css";
 
 body {
-    background: lightblue;
     font-family: sans-serif;
-    flex-flow: column;
-    
     font-size: 12px;
+}
+
+div.viewport-sizer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 a {  
@@ -17,9 +20,8 @@ a {
 nav {
     display: flex;
     background-color: orange;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: flex-start;
-    padding: 2em;
     list-style: none;
 }
 
@@ -36,50 +38,72 @@ ul {
 ul.left-nav {
     border: 2px solid blue;
     justify-content: flex-start;
+    padding: 2em;
     margin-right: auto;
 }
 
 ul.right-nav {
     border: 2px solid green;
     justify-content: flex-end;
+    padding: 2em;
 }
 
 main {
-    background-color: lightpink;
+    border: 1px solid red;
     display: flex;
     flex-flow: column;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    height: 77.5vh;
     overflow: auto;
 }
 
-main > form {
-
+form {
+    width: 40%;
+    display: block;
 }
 
-form > div {
+div#search-div {
     border: 1px solid gray;
+    display: flex;
+    justify-content: space-evenly;
     padding: 10px;
-    
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input#search-bar {
+    outline: none;
+    width: 85%;
+}
+
+div#search-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
 footer {
     background-color: orange;
     display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-    padding: 2em;
+    flex-direction: row;
+    width: 100%;
     list-style: none;
 }
 
 ul.left-footer {
     border: 2px solid blue;
     justify-content: flex-start;
-    margin-right: auto;
+    padding: 2em;
 }
 
 ul.right-footer {
     border: 2px solid green;
     justify-content: flex-end;
+    padding: 2em;
+    margin-left: auto;
 }
