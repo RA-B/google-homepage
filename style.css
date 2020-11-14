@@ -19,7 +19,6 @@ a {
 
 nav {
     display: flex;
-    background-color: orange;
     flex-direction: row;
     justify-content: flex-start;
     list-style: none;
@@ -38,21 +37,29 @@ ul {
 ul.left-nav {
     border: 2px solid blue;
     justify-content: flex-start;
-    padding: 2em;
+    padding: 1em;
     margin-right: auto;
+}
+
+ul.left-nav>li {
+    padding: 1em;
 }
 
 ul.right-nav {
     border: 2px solid green;
     justify-content: flex-end;
-    padding: 2em;
+    padding: 1em;
+}
+
+ul.right-nav>li {
+    padding: 1em;
 }
 
 main {
-    border: 1px solid red;
     display: flex;
     flex-flow: column;
     flex: 1;
+    min-height: 200px;
     justify-content: center;
     align-items: center;
     overflow: auto;
@@ -68,7 +75,7 @@ div#search-div {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 40px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -88,7 +95,6 @@ div#search-buttons {
 }
 
 footer {
-    background-color: orange;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -98,12 +104,20 @@ footer {
 ul.left-footer {
     border: 2px solid blue;
     justify-content: flex-start;
-    padding: 2em;
+    padding: 1em;
+}
+
+ul.left-footer>li {
+    padding: 1em;
 }
 
 ul.right-footer {
     border: 2px solid green;
     justify-content: flex-end;
-    padding: 2em;
+    padding: 1em;
     margin-left: auto;
+}
+
+ul.right-footer>li {
+    padding: 1em;
 }
