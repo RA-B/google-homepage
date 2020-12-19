@@ -5,16 +5,19 @@ body {
     font-size: 12px;
 }
 
-div.viewport-sizer {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-a {  
+/*Top nav element*/
+nav>ul>li>a {  
     color: #232323;
     background-color: transparent;
     text-decoration: none;
+}
+
+a#waffle{
+    color: gray;
+}
+
+a#waffle:hover{
+    color: #232323;
 }
 
 nav {
@@ -35,23 +38,24 @@ ul {
 
 ul.left-nav {
     justify-content: flex-start;
-    padding: 1em;
+    padding: 0.9em;
     margin-right: auto;
 }
 
 ul.left-nav>li {
-    padding: 1em;
+    padding: 0.9em;
 }
 
 ul.right-nav {
     justify-content: flex-end;
-    padding: 1em;
+    padding: 0.9em;
 }
 
 ul.right-nav>li {
-    padding: 1em;
+    padding: 0.9em;
 }
 
+/*Main element*/
 main {
     display: flex;
     flex-flow: column;
@@ -77,9 +81,11 @@ div#search-div {
     justify-content: space-evenly;
     padding: 10px;
     border-radius: 40px;
-    font-size: 28px;
-    font-weight: bold;
     color: gray;
+}
+
+div#search-div :hover{
+    box-shadow: gray;
 }
 
 input#search-bar {
@@ -97,28 +103,40 @@ div#search-buttons {
     width: 60%;
 }
 
+/*Bottom footer element*/
 footer {
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid lightgray;  
     display: flex;
     flex-direction: row;
     width: 100%;
     list-style: none;
+    font-family: arial;
+    font-size: 14px;
+}
+
+footer>ul>li>a {
+    color: gray;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 ul.left-footer {
     justify-content: flex-start;
-    padding: 1em;
+    padding: 0.9em;
 }
 
 ul.left-footer>li {
-    padding: 1em;
+    padding: 0.9em;
 }
 
 ul.right-footer {
     justify-content: flex-end;
-    padding: 1em;
+    padding: 0.9em;
     margin-left: auto;
 }
 
 ul.right-footer>li {
-    padding: 1em;
+    padding: 0.9em;
 }
