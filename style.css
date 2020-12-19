@@ -25,7 +25,6 @@ nav {
 }
 
 ul {
-    border: 2px solid red;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
@@ -35,7 +34,6 @@ ul {
 }
 
 ul.left-nav {
-    border: 2px solid blue;
     justify-content: flex-start;
     padding: 1em;
     margin-right: auto;
@@ -46,7 +44,6 @@ ul.left-nav>li {
 }
 
 ul.right-nav {
-    border: 2px solid green;
     justify-content: flex-end;
     padding: 1em;
 }
@@ -65,22 +62,28 @@ main {
     overflow: auto;
 }
 
+main>img {
+    margin: 20px;
+}
+
 form {
     width: 40%;
     display: block;
 }
 
 div#search-div {
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
     border-radius: 40px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    color: gray;
 }
 
 input#search-bar {
+    border: 0;
     outline: none;
     width: 85%;
 }
@@ -102,7 +105,6 @@ footer {
 }
 
 ul.left-footer {
-    border: 2px solid blue;
     justify-content: flex-start;
     padding: 1em;
 }
@@ -112,7 +114,6 @@ ul.left-footer>li {
 }
 
 ul.right-footer {
-    border: 2px solid green;
     justify-content: flex-end;
     padding: 1em;
     margin-left: auto;
