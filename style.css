@@ -20,6 +20,14 @@ a#waffle:hover{
     color: #232323;
 }
 
+a#sign-in-button {
+    background-color: #4285f4;;
+    padding: 0.5em 1em;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -84,8 +92,8 @@ div#search-div {
     color: gray;
 }
 
-div#search-div :hover{
-    box-shadow: gray;
+div#search-div:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0,0,255,.1);
 }
 
 input#search-bar {
@@ -101,6 +109,19 @@ div#search-buttons {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
+
+input[type="submit"] {
+    border-radius: 4px;
+    border: 0;
+    width: 140px;
+    height:30px;
+    background: #f4f4f4;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0,0,255,.1);
+    border: 1px solid lightgray;
 }
 
 /*Bottom footer element*/
